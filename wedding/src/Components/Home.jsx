@@ -68,20 +68,20 @@ import "./Home.css"
 
 const Home = () => {
   return (
-    <Flex
-      className='divContainer'
-      w={"80%"}
-      // h={"100vh"}
-      // border="3px solid black"
-      margin="auto"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
+    // <Flex
+    //   className='divContainer'
+    //   w={"80%"}
+    //   // h={"100vh"}
+    //   // border="3px solid black"
+    //   margin="auto"
+    //   display="flex"
+    //   alignItems="center"
+    //   justifyContent="center"
       
 
-    // marginTop={"150px"}
-    >
-      <Flex width="100%" display="flex" alignItems="center" justifyContent="center" height="100vh" className='container'>
+    // // marginTop={"150px"}
+    // >
+      <Flex width="80%" display="flex" alignItems="center" justifyContent="center" height="100vh" className='container'>
         <Box position="relative" width="50%" height="100vh" className="boxImg" id='imgBox'>
           <Image
             w="100%"
@@ -95,7 +95,7 @@ const Home = () => {
             className="boxImg"
             id='imgDiv'
           />
-          <Box
+          {/* <Box
             className='wedding'
             position="absolute"
             top={0}
@@ -118,12 +118,12 @@ const Home = () => {
             <Text marginTop="0px" className='msg'>
               We're ready for forever, are you? Help us celebrate our big day with Joy!
             </Text>
-          </Box>
+          </Box> */}
         </Box>
         <Box id='imgBox'
           width="50%"
           height="100vh"
-          backgroundImage="url('https://png.pngtree.com/thumb_back/fh260/background/20221226/pngtree-korean-japanese-style-small-fresh-and-pure-wedding-wedding-engagement-invitation-image_1495144.jpg')"
+          backgroundImage="url('https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x1bvz05uwmjb15s6hp0i.png')"
           backgroundSize="100% 100%"  // Adjusted backgroundSize
           backgroundPosition="center"
           display="flex"
@@ -132,31 +132,15 @@ const Home = () => {
           position="relative"
           alignItems="center"
           margin="auto"
-        >
-
-
-
-          <Box position="relative" className='rightContainer'>
-            {/* <img className='containerImg'  src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nmx4lxclc0okydatuiv8.png" alt="" />
-            <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" textAlign="center" color="black">
-              <Heading size='md' fontFamily={"'Meie Script', cursive"}>
-                Franto Blessmi
-              </Heading>
-
-              <Text py='2'>Friday, April 5, 2024</Text>
-              {/* <Text py='2' fontSize="16px" marginTop="-15px">
-                <CountdownTimer />
-              </Text> 
-            </Box>
-          */}
-
-<img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x1bvz05uwmjb15s6hp0i.png" alt="" />
-</Box> 
+        > 
         </Box>
       </Flex>
-    </Flex>
+    // </Flex>
   );
 }
 
 
 export default Home;
+
+
+
