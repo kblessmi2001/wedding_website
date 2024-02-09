@@ -1,0 +1,24 @@
+.wedding-container {
+    position: relative;
+    margin: auto;
+  }
+  
+  .diamond-gif {
+    position: absolute;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: url('https://i.gifer.com/Imiq.gif');
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .vertical-line {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    background-color: black;
+    transition: height 0.3s ease-in-out;
+  }
+  

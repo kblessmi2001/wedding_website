@@ -1,0 +1,244 @@
+@media screen and (min-width: 631px) and (max-width: 1124px) {
+    .divContainer {
+        width: 80%;
+        height: 100vh;
+        overflow-y: hidden;
+        /* border: 5px solid red; */
+    }
+    .wedding   {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        width: 90%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .wedding > .names  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        width: 90%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .wedding > .msg  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 90%;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: left;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 631px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 200vh;
+        border: 2px solid rebeccapurple;
+    }
+  
+    #imgBox,
+    .imgBox
+        {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #imgBox > #imgDiv {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin: 20px 0px 20px 0px;
+        border: 2px solid rgb(153, 51, 68);
+    }
+    #imgBox > .rightContainer{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        overflow-y: auto;
+        flex-direction: column;
+        margin: 20px 0px 20px 0px;
+        border: 2px solid rgb(153, 51, 68);
+    }
+
+    .wedding {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: -60%;
+    }
+
+    .wedding > .names {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        width: 80%;
+        margin-left: 40px;
+        margin-top: -130%;
+    }
+
+    .wedding > .msg {
+        position: relative;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: -3%;
+    }
+}
+
+
+    /* @media screen and (max-width: 631px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+    
+        #imgBox {
+            width: 100%;
+            height: 50vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    
+        .rightContainer {
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    
+    
+    #imgBox,
+    .imgBox {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .rightContainer {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .wedding {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: -60%;
+    }
+    
+    .wedding > .names {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        width: 80%;
+        margin-left: 40px;
+        margin-top: -130%;
+    }
+    
+    .wedding > .msg {
+        position: relative;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: -3%;
+    }
+} */
+
+
+@media screen and (min-width: 1125px) {
+    .divContainer {
+        width: 80%;
+        height: 100vh;
+        /* border: 5px solid red; */
+    }
+
+    .container {
+        width: 80%;
+        height: 100vh;
+        display: flex;
+    }
+
+    #imgBox {
+        width: 50%;
+        height: 100vh;
+    }
+     .wedding  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 35%;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: left;
+        margin-left: 40px;
+    }
+    .rightContainer
+    {
+        width: 100%;
+        height: 100vh;
+    }
+    /* .wedding > .msg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 35%;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-align: left;
+        margin-left: 40px;
+    } */
+}
