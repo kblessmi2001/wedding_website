@@ -1,4 +1,4 @@
-/* @media screen  and (min-width: 1125px){
+@media screen  and (min-width: 1125px){
     .container {
         display: flex;
         position: relative;
@@ -72,27 +72,5 @@
         object-fit: cover;
         
     }
-} */
-
-.container {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    width: 100%;
 }
 
-.left-img {
-    flex: 1; 
-    object-fit: cover; 
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    z-index: 1;
-}
-
-.right-img {
-    width: auto;
-    height: 100vh;
-    align-self: flex-end;
-}
