@@ -24,11 +24,14 @@ const NewWed = () => {
 
     return (
         <div className='container'> 
+        <div  className='left-div'>
            <img className="left-img" src={leftImage} alt="" />
+           </div>
             <div style={{display:"flex",flexDirection:"column"}}> 
                 <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v99h9ofcmnsz8ukcdgi9.png" alt="" />
                 <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/71zapcqj66crxn5fidby.png" alt="" />
                 <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/evca5i40n8fffi7pwaxm.png" alt="" />
+            
             </div>
         </div>
     );
