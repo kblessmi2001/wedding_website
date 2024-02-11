@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
 import './NewWed.css'; // Import CSS file for styling
 
 const NewWed = () => {
@@ -9,7 +10,11 @@ const NewWed = () => {
         "https://images.unsplash.com/photo-1519220407669-06f9912b4aca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
         "https://images.unsplash.com/photo-1519307212971-dd9561667ffb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ];
-
+const rightImage = [
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v99h9ofcmnsz8ukcdgi9.png",
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/71zapcqj66crxn5fidby.png",
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/evca5i40n8fffi7pwaxm.png",
+  ];
     useEffect(() => {
         const selectRandomImage = () => {
             const randomIndex = Math.floor(Math.random() * images.length);
@@ -22,23 +27,30 @@ const NewWed = () => {
         return () => clearInterval(intervalId);
     }, []);
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
     return (
-        <div className='container'> 
-        <div  className='left-div'>
-           <img className="left-img" src={leftImage} alt="" />
-           </div>
-            <div style={{display:"flex",flexDirection:"column"}}> 
-                <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v99h9ofcmnsz8ukcdgi9.png" alt="" />
-                <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/71zapcqj66crxn5fidby.png" alt="" />
-                <img className="right-img" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/evca5i40n8fffi7pwaxm.png" alt="" />
-            
+        <div className='container'>
+            <div className='left-div'>
+                <img className="left-img" src={leftImage} alt="" />
+            </div>
+            <div className='rightDiv'>
+                <Slider {...settings}>
+                    {rightImage.map((imageUrl, index) => (
+                        <div key={index} className="right-img-container">
+                            <img className="right-img" src={imageUrl} alt="" />
+                        </div>
+                    ))}
+                </Slider>
             </div>
         </div>
     );
 }
 
 export default NewWed;
-
-
-
-

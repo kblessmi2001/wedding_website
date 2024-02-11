@@ -1,53 +1,57 @@
-'use client'
+import React, { useState } from 'react';
+import { Box } from '@chakra-ui/react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import React,{useState} from 'react'
-import { Box } from '@chakra-ui/react'
-import Slider from 'react-slick'
+const CustomNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, right: '50%', transform: 'translateX(50%)' }}
+      onClick={onClick}
+    />
+  );
+};
 
-
-// import singapore from "../Components/Image/singapore.jpg"
-// import tajmahal from "../Components/Image/tajmahal.jpg"
-// import sydney from "../Components/Image/sydney.jpg"
-
+const CustomPrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, left: '50%', transform: 'translateX(-50%)' }}
+      onClick={onClick}
+    />
+  );
+};
 const settings = {
-  dots: true,
-  arrows: false,
+  dots: false,
+  arrows: true,
   fade: true,
   infinite: true,
-  autoplay: true,
-  speed: 500,
-  autoplaySpeed: 5000,
+  autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
-}
+  centerMode: true,
+  centerPadding: '0px',
+  nextArrow: <CustomNextArrow />,
+  prevArrow: <CustomPrevArrow />,
+};
 
-export default function Carousel() {
 
-  const [slider, setSlider] =useState([])
 
-  const cards  = [
-//    singapore, tajmahal, sydney
-"https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j6yxcyb9a3drz2ertobw.jpg","https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j6yxcyb9a3drz2ertobw.jpg","https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j6yxcyb9a3drz2ertobw.jpg"
-  ]
+const CaptionCarousel = () => {
+  const [slider, setSlider] = useState([]);
+
+  const cards = [
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v99h9ofcmnsz8ukcdgi9.png",
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/71zapcqj66crxn5fidby.png",
+    "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/evca5i40n8fffi7pwaxm.png",
+  ];
 
   return (
-
     <Box position={'relative'} height={'100%'} width={'100%'}>
-      {/* CSS files for react-slick */}
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-      />
-      {/* Left Icon */}
-     
-      {/* Slider */}
-    
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
@@ -59,18 +63,14 @@ export default function Carousel() {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             overflow={"hidden"}
-            width={"100%"} 
+            width={"100%"}
             marginBottom={"2px"}
             backgroundImage={`url(${url})`}
-            // style={{width:"100%"}}
-            // border={"1px solid red"}
           />
-
         ))}
-        
       </Slider>
-     
     </Box>
-  
-  )
-}
+  );
+};
+
+export default CaptionCarousel;
