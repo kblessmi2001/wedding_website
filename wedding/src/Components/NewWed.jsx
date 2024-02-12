@@ -6,9 +6,11 @@ const NewWed = () => {
     const [leftImage, setLeftImage] = useState('');
 
     const images = [
-        "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "https://images.unsplash.com/photo-1519220407669-06f9912b4aca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
-        "https://images.unsplash.com/photo-1519307212971-dd9561667ffb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yej9kvf3duo05pc6abjv.jpg",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aw7sudyvi7r0ylygbvo0.jpg",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s4xpp8jlablczq7g96at.jpg",
+        // "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gpvigtom7154vuetpaui.jpg",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hko63756fhwap4pefvzz.jpg"
     ];
 const rightImage = [
     "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v99h9ofcmnsz8ukcdgi9.png",
@@ -54,3 +56,8 @@ const rightImage = [
 }
 
 export default NewWed;
+
+
+
+
+
